@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Quicksand', sans-serif;
+}
+body {
+    background-image: url("../img/pexels-min-an-1131458.jpg");
+    color: #fff;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 2rem;
+}
+h2 {
+    text-align: center;
+}
+main {
+    background-color: #00000098;
+    
+}
+/* FORMULARIO -----------*/
+
+form {
+    width: 35vw;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+fieldset {
+    padding: 2rem;
+    border: 4px solid #0bbe0b;
+    border-radius: 15px;
+}
+legend {
+    padding: 0.7rem;
+    background-color: #0bbe0b;
+    border-radius: 15px;
+}
+input {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    width: 90%;
+    color: #fff;
+    
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+}
+input:hover {
+    border-bottom: 2px solid #0bbe0b; 
+}
+input::placeholder {
+    color: #fff;
+}
+
+
+.enviar {
+    background-color: #5ea01d;
+    border: none;
+    padding: 0.6rem;
+    width: 50%;
+    margin: 0.5rem;
+    align-self: center;
+}
+.enviar:hover {
+    background-color: #396111;
+}
+
+/* RESPONSIVO ------------ */
+
+@media (max-width:480px) {
+    form {
+        width: 90vw;
+    }
+    input::placeholder, .enviar {
+        font-size: 1.1rem;
+    }
+}
